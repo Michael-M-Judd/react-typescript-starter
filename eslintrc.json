@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:jasmine/recommended",
+    "plugin:prettier/recommended",
+    "plugin:eslint-comments/recommended",
+    "prettier/react",
+    "@typescript-eslint/parser",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["jasmine", "@typescript-eslint", "json", "react-hooks"],
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true,
+    "jasmine": true,
+    "browser": true
+  },
+  "rules": {
+    "strict": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "import/no-extraneous-dependencies": "off",
+    "jasmine/no-spec-dupes": "off",
+    "jasmine/no-suite-dupes": ["warn", "branch"],
+    "camelcase": "off",
+    "no-confusing-arrow": "off",
+    "no-console": "warn",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "no-use-before-define": ["error", { "classes": true, "functions": false, "variables": false }],
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/jsx-pascal-case": "off",
+    "react/prop-types": "off",
+    "react/style-prop-object": "off",
+    "react/require-default-props": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "implicit-arrow-linebreak": "off",
+    "lines-between-class-members": "off",
+    "react/destructuring-assignment": "off",
+    "arrow-parens": "off",
+    "react/self-closing-comp": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "consistent-return": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "jest": true,
+    "SyntheticEvent": true,
+    "SyntheticInputEvent": true,
+    "SyntheticFocusEvent": true,
+    "SyntheticKeyboardEvent": true
+  }
+}

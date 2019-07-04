@@ -11,7 +11,7 @@ module.exports = {
   outputPath: './build/playroom',
 
   // Optional:
-  title: 'Coinsquare Component Library',
+  title: 'Component Library Playroom',
   frameComponent: './playroom/FrameComponent.tsx',
   widths: [375, 768, 1224],
   port: 6002,

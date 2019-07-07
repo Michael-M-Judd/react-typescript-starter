@@ -1,5 +1,4 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import grey from '@material-ui/core/colors/grey';
 
 export const palette = {
   primary: {
@@ -23,17 +22,12 @@ export const palette = {
     light: '#FF8F6B',
     dark: '#E5210E'
   },
-  accentRed: {
-    main: '#FF5942',
-    light: '#FF8F6B',
-    dark: '#E5210E'
-  },
-  accentYellow: {
+  warning: {
     main: '#FFC900',
     light: '#FFE277',
     dark: '#F79D00'
   },
-  accentGreen: {
+  success: {
     main: '#00C665',
     light: '#2DE58E',
     dark: '#009239'
@@ -56,7 +50,7 @@ export const palette = {
   }
 };
 
-const ibmFontFamily = "'IBM Plex Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif";
+const customFontFamily = "'IBM Plex Sans', 'Roboto', 'Helvetica', 'Arial', sans-serif";
 
 export const mainTheme = createMuiTheme({
   palette,
@@ -67,7 +61,7 @@ export const mainTheme = createMuiTheme({
   },
 
   typography: {
-    fontFamily: ibmFontFamily,
+    fontFamily: customFontFamily,
     useNextVariants: false,
     h1: {
       fontWeight: 600,
@@ -113,19 +107,6 @@ export const mainTheme = createMuiTheme({
   },
 
   overrides: {
-    MuiLinearProgress: {
-      root: {
-        height: 5
-      }
-    },
-    MuiCircularProgress: {
-      colorPrimary: {
-        color: palette.neutral.main
-      },
-      root: {
-        animationDuration: '550ms'
-      }
-    },
     MuiButton: {
       root: {
         height: '56px',
@@ -144,58 +125,9 @@ export const mainTheme = createMuiTheme({
         height: '36px'
       }
     },
-    MuiCard: {
-      root: {
-        width: '100%',
-        margin: '20px 0 0 0',
-        backgroundColor: '#f3f3f3'
-      }
-    },
     MuiFormControl: {
       root: {
         marginTop: 20
-      }
-    },
-    MuiFormLabel: {
-      root: {
-        fontWeight: 500,
-        '&$focused': {
-          fontWeight: 550
-        }
-      },
-      filled: {
-        color: '#3d00e0',
-        fontWeight: 550
-      }
-    },
-    MuiInput: {
-      underline: { borderBottom: '0px' }
-    },
-
-    MuiFab: {
-      root: {
-        boxShadow: 'none',
-        width: '70px',
-        height: '70px'
-      }
-    },
-
-    MuiFilledInput: {
-      root: {
-        height: '58px',
-        color: grey[900],
-        backgroundColor: grey[200],
-        borderTopLeftRadius: '3px',
-        borderTopRightRadius: '3px',
-        borderBottomLeftRadius: '3px',
-        borderBottomRightRadius: '3px',
-        transition: 'none',
-        '&$focused': {
-          backgroundColor: grey[200]
-        },
-        '&:hover': {
-          backgroundColor: grey[200]
-        }
       }
     }
   }

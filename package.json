@@ -1,10 +1,10 @@
 {
-  "name": "react-typescript-starter",
+  "name": "axis-mapper-ui",
   "version": "0.1.0",
-  "description": "React Typescript starter, with material-ui, storybook, and playroom",
+  "description": "Axis Mapper UI",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michael-m-judd/react-typescript-starter.git"
+    "url": "https://gitlab.com/RockMassTechnologies/marc_device.git"
   },
   "private": true,
   "dependencies": {
@@ -13,8 +13,11 @@
     "@types/material-ui": "^0.21.6",
     "@types/node": "^11.13.5",
     "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/styled-components": "^4.1.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "2.1.8",
     "styled-components": "^4.3.2",
     "typescript": "^3.4.3"
@@ -29,6 +32,7 @@
     "build:storybook": "build-storybook",
     "build:playroom": "playroom build",
     "create:component": "ft tsx-component ./src/components",
+    "create:page": "ft tsx-component ./src/pages",
     "lint:css": "sh ./scripts/lint_css.sh",
     "lint:js": "sh ./scripts/lint_js.sh",
     "lint": "yarn lint:css; yarn lint:js"

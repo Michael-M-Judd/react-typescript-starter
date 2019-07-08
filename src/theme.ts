@@ -1,10 +1,11 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import { DefaultTheme } from 'styled-components';
 
-export const palette = {
+export const palette: DefaultTheme = {
   primary: {
-    main: '#253AE4',
-    dark: '#0619B0',
-    light: '#4153e7'
+    main: '#ffb700',
+    dark: '#c78700',
+    light: '#ffe94d'
   },
   secondary: {
     main: '#1A191A',
@@ -25,7 +26,7 @@ export const palette = {
   warning: {
     main: '#FFC900',
     light: '#FFE277',
-    dark: '#F79D00'
+    dark: '#ffb700'
   },
   success: {
     main: '#00C665',
@@ -33,10 +34,10 @@ export const palette = {
     dark: '#009239'
   },
   text: {
-    primary: 'rgba(0, 0, 0, 0.87)',
-    secondary: 'rgba(0, 0, 0, 0.3)',
+    primary: 'rgba(255, 255, 255, 1.0)',
+    secondary: 'rgba(230, 230, 230, 1.0)',
     disabled: '#B0B0B0',
-    primaryTextLink: '#253AE4',
+    primaryTextLink: '#ffb700',
     secondaryTextLink: '#FFFFFF'
   },
   background: {
@@ -46,7 +47,7 @@ export const palette = {
     primaryBgDark: '#000000',
     secondaryBgDark: '#1A191A',
 
-    default: '#FFFFFF'
+    default: '#1A191A'
   }
 };
 
@@ -109,17 +110,17 @@ export const mainTheme = createMuiTheme({
   overrides: {
     MuiButton: {
       root: {
-        height: '56px',
+        height: '64px',
         textTransform: 'none',
         boxShadow: 'none',
         fontWeight: 'bold',
-        fontSize: 14,
+        fontSize: 16,
         textShadow: 'none'
       },
       sizeLarge: {
-        height: '64px',
-        fontSize: 18,
-        fontWeight: 'normal'
+        height: '72px',
+        fontSize: 20,
+        fontWeight: 'bold'
       },
       sizeSmall: {
         height: '36px'

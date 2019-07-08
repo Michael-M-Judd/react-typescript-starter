@@ -1,4 +1,4 @@
-# React Typescript Starter
+# Axis Mapper User Interface
 
 This project is used to bootstrap your initial react development with a few tools already setup:
 

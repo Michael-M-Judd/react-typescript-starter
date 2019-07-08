@@ -1,15 +1,24 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 import ThemeProvider from './components/ThemeProvider';
-import { Button, Typography } from '@material-ui/core';
+import Home from './pages/Home';
+
+const GlobalStyles = createGlobalStyle`
+  html, body {
+    background: ${({ theme }) => theme.background.default};
+  }
+`;
 
 const App = () => {
   return (
     <ThemeProvider>
-      <Typography variant="h1">React Typescript Starter</Typography>
-      <Typography variant="body1">Start coding</Typography>
-      <Button variant="contained" color="primary" onClick={() => console.log('button click')}>
-        Example button
-      </Button>
+      <>
+        <GlobalStyles />
+        <BrowserRouter>
+          <Route path="/" exact component={Home} />
+        </BrowserRouter>
+      </>
     </ThemeProvider>
   );
 };

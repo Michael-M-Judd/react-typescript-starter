@@ -5,9 +5,4 @@ import { text } from '@storybook/addon-knobs/react';
 
 import Home from './index';
 
-storiesOf("Home", module).add(
-  "default",
-  withInfo(`description (markdown)`)(() => (
-    <Home dummyProp={text("dummyProp", "initialValue")} />
-  ))
-);
+storiesOf('Home', module).add('default', withInfo(`description (markdown)`)(() => <Home />));

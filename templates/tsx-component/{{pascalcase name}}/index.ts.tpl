@@ -1,2 +1,1 @@
-import { {{pascalcase name}} } from './{{pascalcase name}}';
-export default {{pascalcase name}};
+export { {{pascalcase name}} } from './{{pascalcase name}}';

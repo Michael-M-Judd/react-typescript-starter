@@ -5,11 +5,9 @@ interface {{pascalcase name}}Props {
   dummyProp?: string;
 }
 
-const {{pascalcase name}} = (props: {}) => {
-  return (
-    <p>{{pascalcase name}} Component - {props.dummyProp}</p>
-  )
-};
+const {{pascalcase name}}: React.SFC<{{pascalcase name}}Props> = props => (
+  <p>{{pascalcase name}} Component - {props.dummyProp}</p>
+);
 
 {{pascalcase name}}.defaultProps = {
   dummyProp: 'My dummy prop default value'

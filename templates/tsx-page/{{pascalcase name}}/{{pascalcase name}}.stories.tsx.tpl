@@ -5,7 +5,7 @@ import { text } from '@storybook/addon-knobs/react';
 
 import {{pascalcase name}} from './index';
 
-storiesOf("Components/{{pascalcase name}}", module).add(
+storiesOf("Pages/{{pascalcase name}}", module).add(
   "default",
   () => (
     <{{pascalcase name}} dummyProp={text("dummyProp", "initialValue")} />

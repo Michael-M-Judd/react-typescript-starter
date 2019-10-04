@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
+import { PageLoader } from './components/PageLoader';
 import ThemeProvider from './components/ThemeProvider';
-import { Button, Typography } from '@material-ui/core';
+
+const Home = React.lazy(() => import('./pages/Home'));
+
+const GlobalStyles = createGlobalStyle`
+  html, body {
+    background: ${({ theme }) => theme.palette.background.default};
+  }
+`;
 
 const App = () => {
   return (
     <ThemeProvider>
-      <Typography variant="h1">React Typescript Starter</Typography>
-      <Typography variant="body1">Start coding</Typography>
-      <Button variant="contained" color="primary" onClick={() => console.log('button click')}>
-        Example button
-      </Button>
+      <>
+        <Suspense fallback={<PageLoader />}>
+          <GlobalStyles />
+          <BrowserRouter>
+            <Route path="/" exact component={Home} />
+          </BrowserRouter>
+        </Suspense>
+      </>
     </ThemeProvider>
   );
 };

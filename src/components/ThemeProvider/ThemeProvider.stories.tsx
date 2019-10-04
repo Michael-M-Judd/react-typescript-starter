@@ -7,6 +7,6 @@ import ThemeProvider from './index';
 storiesOf('ThemeProvider', module).add(
   'default',
   withInfo(`This component is a simple react provider that your app should be wrapped in`)(() => (
-    <ThemeProvider theme={{}}> </ThemeProvider>
+    <ThemeProvider>Theme provider</ThemeProvider>
   ))
 );

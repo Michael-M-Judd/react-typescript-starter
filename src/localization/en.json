@@ -1,4 +1,10 @@
 {
-  "translations": {},
+  "translations": {
+    "home": {
+      "title": "React Typescript Starter",
+      "sub-title": "Start coding!",
+      "button": "Example button"
+    }
+  },
   "common": {}
 }
